@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Gestor de Tarefas</title>
+        <meta charset="utf-8"/>
+        <link rel="icon" href="public/favicon.png"/>
+        <link rel="stylesheet" href="public/w3.css"/>
+        <link rel="stylesheet" href="public/template.css">
+    </head>
+    <body>
+        <div class="w3-card-4">
+            <header class="w3-container w3-teal">
+                <h1>Gestor de Tarefas</h1>
+            </header>
+
+            <div class="w3-container" contextmenu="charset='utf-8'" style="color: darkcyan; position: relative; width: 100%;" >
+                <form class="w3-ul w3-card-4" style="width:100%;  position: relative;" method="post">
+                    <label for="user" style="color: darkcyan;">Quem realiza a tarefa: </label><input style="border-style: hidden;" placeholder="Digite aqui...">
+                    <label for="descrição" style="color: darkcyan;">Qual é a descrição da tarefa: </label><input style="border-style: hidden;"  placeholder="Digite aqui...">
+                    <label for="date" style="color: darkcyan;">Data para terminar a tarefa: </label><input style="border-style: hidden;"  placeholder="Digite aqui...">
+                    <button style="border-style: hidden;margin-left: 10px; align-self:flex-start;" href="http://localhost:3000/tasks/edit/id">Submmit</button>
+                </form>    
+                </div>
+                <div class="row">
+                    <div class="column">
+                      <table>
+                        <tr>
+                          <th>Id</th>
+                          <th>Nome</th>
+                          <th>Descrição</th>
+                          <th>Data</th>
+                        </tr>
+                        <tr>
+                            <td>3333 </td>
+                            <td>Jill</td>
+                            <td>Comer</td>
+                            <td>5-11-2022</td>
+                            <td><button style="border-style: hidden;margin-left: 10px; align-self:flex-start;" href="http://localhost:3000/tasks/edit/id">Editar</button></td>
+                            <td><button style="border-style: hidden;margin-left: 10px; align-self:flex-start;" href="http://localhost:3000/tasks/edit/id">Eliminar</button></td>
+                            <td><button style="border-style: hidden;margin-left: 10px; align-self:flex-start;" href="http://localhost:3000/tasks/edit/id">Fazer</button></td>
+                        </tr>
+                      </table>
+                    </div>
+                    <div class="column">
+                        <table>
+                          <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Descrição</th>
+                            <th>Data</th>
+                          </tr>
+                          <tr>
+                              <td>3333 </td>
+                              <td>Jill</td>
+                              <td>Comer</td>
+                              <td>5-11-2022</td>
+                          </tr>
+                        </table>
+                  </div>
+                </div>
+
+            </div>
+            
+
+
+
+            
+            <div class="w3-container w3-margin-8">
+                <ul class="w3-ul"></ul>
+            </div>
+            <footer class="w3-container w3-teal">
+                <p>&copy Gestor de tarefas</p>
+            </footer>
+        </div>
+    </body>
+    </html>

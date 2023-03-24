@@ -1,0 +1,71 @@
+{
+  "users": [],
+  "tasks": [
+    {
+      "id": "123",
+      "nome": "João",
+      "descrição": "Comer palha",
+      "data": "20-03-2023"
+    },
+    {
+      "id": "124",
+      "nome": "Marta",
+      "descrição": "Encher chouriços",
+      "data": "03-03-2023"
+    },
+    {
+      "id": "125",
+      "nome": "Inês",
+      "descrição": "Comer batatas",
+      "data": "11-01-2023"
+    },
+    {
+      "id": "126",
+      "nome": "Joana",
+      "descrição": "Ler o livro",
+      "data": "11-01-2023"
+    },
+    {
+      "id": "127",
+      "nome": "Robert",
+      "descrição": "Correr",
+      "data": "11-09-2023"
+    },
+    {
+      "id": "128",
+      "nome": "Longo",
+      "descrição": "Desentupir o cano",
+      "data": "10-01-2023"
+    },
+    {
+      "id": "129",
+      "nome": "Maria",
+      "descrição": "Fazer Bolacchas",
+      "data": "09-01-2023"
+    },
+    {
+      "id": "200",
+      "nome": "Teixeira",
+      "descrição": "Pintar a Sala",
+      "data": "09-05-2023"
+    },
+    {
+      "id": "201",
+      "nome": "Telmo",
+      "descrição": "Deitar o lixo fora",
+      "data": "26-06-2023"
+    },
+    {
+      "id": "202",
+      "nome": "Professor",
+      "descrição": "Apagar a BD",
+      "data": "26-04-2023"
+    },
+    {
+      "id": "203",
+      "nome": "Sidney",
+      "descrição": "Colocar nova Base de Dados",
+      "data": "26-04-2023"
+    }
+  ]
+}
