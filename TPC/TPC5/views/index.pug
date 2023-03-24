@@ -1,0 +1,65 @@
+extends layout
+
+block content
+  .w3-card-4
+    header.w3-container.w3-blue-grey.w3-text-white
+      h1 Gestor de Tarefas
+
+    form.w3-container(method="POST")
+      fieldset
+        legend Tarefa
+        label id
+        input.w3-input.w3-round(type="text", name="id")
+        label data
+        input.w3-input.w3-round(type="date", name="data")
+        label nome
+        input.w3-input.w3-round(type="text", name="nome")
+        label descrição
+        input.w3-input.w3-round(type="text", name="descrição")
+      button.w3-btn.w3-blue-grey.w3-text-white.w3-mb-2.w3-round-large(type="submit") Submit
+    if task
+      fieldset
+        legend Tarefa
+        label id
+        input.w3-input.w3-round(type="text", name="id", value=task.id)
+        label data
+        input.w3-input.w3-round(type="date", name="data", value=task.data)
+        label nome
+        input.w3-input.w3-round(type="text", name="nome", value=task.nome)
+        label descrição
+        input.w3-input.w3-round(type="text", name="descrição", value=task.descrição)
+      button.w3-btn.w3-blue-grey.w3-text-white.w3-mb-2.w3-round-large(type="submit") Submit
+    .row
+      .column
+        table.w3-table-all
+          tr
+            th Tarefa
+            th Data
+            th Nome
+          each task in tasks
+            if !tasks.done
+                tr
+                  td #{task.descrição}
+                  td #{task.data}
+                  td #{task.nome}
+                  td
+                    button.w3-btn.w3-blue-grey.w3-text-white.w3-mb-2.w3-round-large(type="submit")
+                      a(href="/tasks/edit/"+task.id) Edit
+                    button.w3-btn.w3-blue-grey.w3-text-white.w3-mb-2.w3-round-large(type="submit")
+                      a(href="/tasks/done/"+task.id) Done
+      .column
+        table.w3-table-all
+            tr
+              th Tarefa
+              th Data
+              th Nome
+            each task in tasks
+              if task.done
+                tr
+                  td #{task.descrição}
+                  td #{task.data}
+                  td #{task.nome}
+                  td 
+                    button.w3-btn.w3-blue-grey.w3-text-white.w3-mb-2.w3-round-large(type="submit")
+                      a(href="/tasks/delete/"+task.id) Delete
+
